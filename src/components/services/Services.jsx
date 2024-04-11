@@ -58,7 +58,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Flutter App</h2>
+          <h2>Flutter development</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis at
             voluptatem recusandae consectetur distinctio dolor.
@@ -91,7 +91,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Java Backend</h2>
+          <h2>Java Development</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             qui, repudiandae pariatur eaque debitis eligendi.
