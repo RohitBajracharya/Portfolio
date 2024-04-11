@@ -60,8 +60,8 @@ const Services = () => {
         >
           <h2>Flutter development</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis at
-            voluptatem recusandae consectetur distinctio dolor.
+            Make responsive mobile app using Flutter, Getx (state management),
+            VelocityX
           </p>
           <button>Go</button>
         </motion.div>
@@ -71,8 +71,7 @@ const Services = () => {
         >
           <h2>React Js Frontend</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            officiis pariatur molestiae aspernatur minima facilis.
+            Make responsive web app using ReactJs, Hooks, framer-motion, Axios
           </p>
           <button>Go</button>
         </motion.div>
@@ -82,8 +81,7 @@ const Services = () => {
         >
           <h2>Node Js Backend</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            qui, repudiandae pariatur eaque debitis eligendi.
+            Make Api using NodeJs, Express, MongoDb with jwtAuth, multer, joi
           </p>
           <button>Go</button>
         </motion.div>
@@ -92,10 +90,7 @@ const Services = () => {
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>Java Development</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            qui, repudiandae pariatur eaque debitis eligendi.
-          </p>
+          <p>Make Api using Spring Framework, Spring Hibernate, SpringBoot</p>
           <button>Go</button>
         </motion.div>
       </motion.div>
