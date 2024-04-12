@@ -41,17 +41,17 @@ const Services = () => {
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="/services.jpg" alt="" />
-          <h1>
+          {/* <h1>
             <motion.b whileHover={{ color: "orange" }}>Crafting</motion.b>{" "}
             Digital
-          </h1>
+          </h1> */}
+          <button>What I do?</button>
         </div>
-        <div className="title">
+        {/* <div className="title">
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Solution</motion.b>
           </h1>
-          <button>What I do?</button>
-        </div>
+        </div> */}
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
