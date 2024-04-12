@@ -33,6 +33,7 @@ const Contact = () => {
       .then(
         () => {
           toast.success("Message send successfully");
+          formRef.current.reset();
         },
         (error) => {
           toast.error("Error while sending email");
