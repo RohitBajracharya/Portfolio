@@ -1,7 +1,8 @@
+import emailjs from "@emailjs/browser";
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
+import { toast } from "react-toastify";
 import "./Contact.scss";
-
 const variants = {
   initial: {
     y: 500,
@@ -19,7 +20,26 @@ const variants = {
 
 const Contact = () => {
   const ref = useRef();
+  const formRef = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_99dfbtm", "template_6tnkuh4", formRef.current, {
+        publicKey: "PdozCIXPogVV9ZTvk",
+      })
+      .then(
+        () => {
+          toast.success("Message send successfully");
+        },
+        (error) => {
+          toast.error("Error while sending email");
+        }
+      );
+  };
+
   return (
     <motion.div
       ref={ref}
@@ -74,14 +94,15 @@ const Contact = () => {
           </svg>
         </motion.div>
         <motion.form
-          action=""
+          ref={formRef}
+          onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea row={8} placeholder="Message" />
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <textarea row={8} placeholder="Message" name="message" />
           <button type="submit">Submit</button>
         </motion.form>
       </div>
