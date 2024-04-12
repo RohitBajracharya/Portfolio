@@ -59,10 +59,7 @@ const Services = () => {
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>Flutter development</h2>
-          <p>
-            Make responsive mobile app using Flutter, Getx (state management),
-            VelocityX
-          </p>
+          <p>Make responsive mobile app using Flutter, Getx , VelocityX</p>
           <button>Go</button>
         </motion.div>
         <motion.div
