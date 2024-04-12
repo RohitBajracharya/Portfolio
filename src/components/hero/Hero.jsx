@@ -54,8 +54,12 @@ const Hero = () => {
             MERN Developer and Flutter Developer
           </motion.h1>
           <motion.div className="buttons" variants={textVariants}>
-            <button>See the Latest Works</button>
-            <button>Contact Me</button>
+            <a href="#Portfolio">
+              <button>See the Latest Works</button>
+            </a>
+            <a href="#Contact">
+              <button>Contact Me</button>
+            </a>
           </motion.div>
           <motion.img
             variants={textVariants}
