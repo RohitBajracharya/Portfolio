@@ -53,6 +53,7 @@ const Services = () => {
           </h1>
         </div> */}
       </motion.div>
+
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"

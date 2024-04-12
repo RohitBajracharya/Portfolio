@@ -11,6 +11,11 @@
         justify-content: space-between;
         height: 100%;
 
+        @include mobile{
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
        
         span {
             font-weight: bold;

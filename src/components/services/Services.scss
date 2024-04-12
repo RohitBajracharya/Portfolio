@@ -1,9 +1,11 @@
+@import '../../app.scss';
 .services{
     background: linear-gradient(180deg,#0c0c1d,#111132);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 5px;
     
     .textContainer{
         flex: 1;
@@ -11,18 +13,37 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        @include mobile {
+            flex: none;
+                align-self: center;
+                text-align: center;
+                flex-direction: column;
+            }
+                        @include tablet {
+                align-self: center;
+                            flex-direction: column;
+                        }
         
         p {
             font-weight: 200;
-            font-size: 20px;
+            font-size: 28px;
             color: gray;
             text-align: right;
+            @include mobile{
+                font-size: 16px;
+            }
+                        @include tablet {
+                            font-size: 24px;
+                        }
         }
     
         hr {
             width: 15rem;
             border: none;
             border-top: 0.5px solid gray;
+            @include tablet{
+                width: 25rem;
+            }
         }
     }
 
@@ -31,17 +52,39 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // margin-bottom: 5px;
+        justify-content: center;
+
+        @include mobile {
+            margin-top: 10px;
+                width: 100%;
+            }
+                         @include tablet {
+                             margin-top: 10px;
+                             width: 100%;
+                         }
 
         .title{
             display: flex;
             align-items: center;
             gap: 20px;
+            @include mobile {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 20px;
+                }
             img{
                 width: 300px;
                 height: 100px;
                 border-radius: 50px;
                 object-fit: cover;
+                @include mobile {
+                        width: 200px;
+                        height: 50px;
+                    }
+                                        @include tablet {
+                                            width: 200px;
+                                            height: 50px;
+                                        }
             }
             h1{
                 font-size: 96px;
@@ -55,6 +98,16 @@
                 border: none;
                 font-size: 24px;
                 cursor: pointer;
+                @include mobile {
+                        font-size: 16px;
+                        width: 150px;
+                        height: 50px;
+                    }
+                                @include tablet {
+                                    font-size: 20px;
+                                    width: 150px;
+                                    height: 50px;
+                                }
             }
         }
         
@@ -65,6 +118,19 @@
         display: flex;
         max-width: 1366px;
         margin: auto 15%;
+        font-size: 20px;
+        @include mobile {
+                display: grid;
+                    grid-template-columns: repeat(2, minmax(120px, max-content));
+                    height: auto;
+                    padding: 10px;
+            }
+                        @include tablet {
+                            display: grid;
+                            grid-template-columns: repeat(2, minmax(150px, max-content));
+                            height: auto;
+                            padding: 10px;
+                        }
         .box{
             padding: 10px 30px;
             border: 0.5px solid gray;
@@ -73,6 +139,37 @@
             justify-content: space-evenly;
             height: 20em;
             cursor: pointer;
+            h2 {
+                    font-size: 24px;
+                }
+            
+            @include mobile{
+                height: 12em;
+                padding:2px 10px;
+                flex-wrap: wrap;
+
+                p{
+                    font-size: 12px;
+                }
+
+                h2{
+                    display: flex;
+                    font-size: 10px;
+                }
+            }
+                         @include tablet {
+                             height: 15em;
+                             padding: 2px 10px;
+                             flex-wrap: wrap;
+                                // background-color: red;
+                             
+                             h2 {
+                                 display: flex;
+                                 font-size: 14px;
+                             }
+                         }
+            
+                
         }
 
         button{
@@ -80,6 +177,11 @@
             background-color: orange;
             border: none;
             cursor: pointer;
+            @include mobile {
+                    border: 1px solid orange;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
         }
     }
     
