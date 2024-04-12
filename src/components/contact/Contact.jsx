@@ -51,7 +51,7 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1>Let's Work Together</motion.h1>
         <motion.div className="item">
-          <h2>Mail</h2>
+          <h2>Email</h2>
           <span>rohitbajra2001@gmail.com</span>
         </motion.div>
         <motion.div className="item">
@@ -68,7 +68,7 @@ const Contact = () => {
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: 1, duration: 1 }}
         >
           <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -98,12 +98,12 @@ const Contact = () => {
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 2, duration: 1 }}
         >
           <input type="text" placeholder="Name" name="name" required />
           <input type="email" placeholder="Email" name="email" required />
-          <textarea row={8} placeholder="Message" name="message" />
-          <button type="submit">Submit</button>
+          <textarea row={10} placeholder="Message" name="message" />
+          <button type="submit">Send Message</button>
         </motion.form>
       </div>
     </motion.div>

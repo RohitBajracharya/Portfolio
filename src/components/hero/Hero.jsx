@@ -51,7 +51,7 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>Rohit Bajracharya</motion.h2>
           <motion.h1 variants={textVariants}>
-            MERN Developer and Flutter Developer
+            Flutter Developer and MERN Developer
           </motion.h1>
           <motion.div className="buttons" variants={textVariants}>
             <a href="#Portfolio">
